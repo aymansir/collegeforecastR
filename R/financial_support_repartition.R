@@ -9,11 +9,11 @@
 #' @return None
 #'
 #' @examples
-#' costvdebt(uni.name = "University of Pennsylvania")
+#' finRepartition(uni.name = "University of Pennsylvania")
 #'
 #' @export
 
-costvdebt <- function(uni.name) {
+finRepartition <- function(uni.name) {
 
   library(readr)
   library(scales)
