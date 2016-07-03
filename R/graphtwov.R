@@ -5,3 +5,9 @@ View(college_data)
 
 
 plot(total.attendCost ~ Accepted, data = college_data)
+
+
+install.packages(c("devtools", "roxygen2", "testthat", "knitr"))
+
+create("collegeforecastR")
+
