@@ -1,16 +1,26 @@
-# TODO: read the dataframe into dat
+#' Evolution of grants / financial aid over time
+#'
+#'The following code extracts the data relating to any vector of universities from a
+#'dataframe and uses it to plot the evolution of attendance cost and average student debt
+#'over time.
+#'If you execute it on you computer, you can clearly see that the average debt goes up as the
+#'price goes up.
+#'
+#' @param uni.name type in name of university
+#'
+#' @return None
+#'
+#' @examples
+#' costvdebt(uni.names = "University of Southern California")
+#' costvdebt(uni.names = c("University of Southern California", "Princeton University"))
+#'
+#' @export
 
-# The following code extracts the data relating to any vector of universities from a
-# dataframe and uses it to plot the evolution of attendance cost and average student debt
-# over time.
-# If you execute it on you computer, you can clearly see that the average debt goes up as the
-# price goes up.
 
 costvdebt <- function(uni.names) {
 
   library(ggplot2)
   library(readr)
-  library(grid)
 
   dat <- read_csv("college_data_cleaned.csv")
   current_uni <- subset(dat, dat$uni.name %in% (uni.names))
@@ -30,6 +40,4 @@ costvdebt <- function(uni.names) {
 }
 
 
-
-costvdebt(c("Harvard University"))
-
+install.packages(c("devtools", "roxygen2", "testthat", "knitr"))

@@ -1,9 +1,18 @@
 Package: collegeforecastR
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Functions for plotting College Data
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Saad Slaoui, Ayman Siraj, Stanton Levitt
+Maintainer: Who to complain to <aymansir@usc.edu>
+Description: Visualize college financial data to see trends in the rise of debt,
+    the cost of attending college and the repartition of financial support.
+License: LGPL
 LazyData: TRUE
+Imports:
+    ggplot2,
+    readr,
+    scales,
+    reshape
+Suggests:
+    testthat
+RoxygenNote: 5.0.1

@@ -1,8 +1,8 @@
 #' Evolution of grants / financial aid over time
 #'
-#' The following code plots the evolution of different sources of financial support for students (more
-#' specifically, financial aid, federal grants, local grants and student loands) for any given
-#' university over time.
+#' The following code plots the evolution of different sources of financial support
+#' for students (more specifically, financial aid, federal grants, local grants and
+#' student loands) for any given university over time.
 #'
 #' @param uni.name type in name of university
 #'
@@ -35,4 +35,7 @@ finRepartition <- function(uni.name) {
                        values = c("red", "blue", "yellow", "green"))
 }
 
+document()
+
+4753 / 9842
 
